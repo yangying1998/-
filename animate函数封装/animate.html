@@ -1,0 +1,59 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>animate</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            #box{
+                width:100px;
+                height:100px;
+                background:red;
+                position:absolute;
+                left:0;
+            }
+        </style>
+        <script src="animate.js"></script>
+    </head>
+    <body>
+        <div id="box">
+        </div>
+    </body>
+    <script>
+        var box=document.getElementById("box");
+        box.onclick=function(){
+            animate(box,{left:500,top:300,opacity:20});
+            //console.log(getComputedStyle(box,null)["left"]);
+            //匀速运动
+            //  var timer=setInterval(function(){
+            //      var now=parseInt(getStyle(box,'left'));
+            //      if(now==500){
+            //          clearInterval(timer);
+            //      }else{
+            //     box.style.left=now+1+'px';
+            // }
+            //  },30)
+           // 变速运动
+        //     var timer=setInterval(function(){
+        //          var now=parseInt(getStyle(box,'left'));
+        //          var speed=Math.ceil((500-now)/6);
+        //          console.log(now);
+        //           if(now==500){
+        //              clearInterval(timer);
+        //          }else{
+        //         box.style.left=now+speed+'px';
+        //         }
+        //      },30)
+        // function getStyle(obj,attr){
+        //     if(obj.currentStyle){
+        //         return obj.currentStyle[attr];
+        //     }else{
+        //        return  getComputedStyle(obj,null)[attr];
+        //     }
+        // }
+         }
+    </script>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>图片轮播</title>
+    </head>
+    <style>
+        .wrap{
+            width:1200px;
+            height:397px;
+            border:1px solid black;
+            margin:30px auto;
+            overflow:hidden;
+            position:relative;
+        }
+        .wrap a{
+            display:none;
+        }
+        *{
+            padding:0;
+            margin:0;
+        }
+        ul li{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        /*.button{
+            position:absolute;
+            bottom:196px;
+        }*/
+        .button>span{
+            display:block;
+            width:30px;
+            height:50px;
+            line-height:50px;
+            float:left;
+            background:red;
+            font-size:25px;
+          
+        }
+        #next{
+            cursor:pointer;
+            position:absolute;
+            right:0px;
+            bottom:196px;
+        }
+        #prev{
+             cursor:pointer;
+              position:absolute;
+             left:0px;
+              bottom:196px;
+        }
+        .num{
+            float:left;
+            position:absolute;
+            left:500px;
+            bottom:0px;
+        }
+        .num li{
+            float:left;
+            width:30px;
+            height:30px;
+            line-height:30px;
+            margin:10px;
+           background:#fff;
+           color:#000;
+           text-align:center;
+           border-radius:50%;
+           cursor:pointer;
+        }
+    </style>
+    <script src="animate.js"></script>
+    <body>
+        <div class="wrap">
+            <a href="#" style="display:block;"> <img src="images/4.gif"></a>
+            <a href="#"> <img src="images/2.jpg"></a>
+            <a href="#"> <img src="images/3.jpg"></a>
+            <a href="#"> <img src="images/1.jpg"></a>
+            <a href="#"> <img src="images/5.jpg"></a>
+            <a href="#"> <img src="images/6.jpg"></a>
+            <a href="#"> <img src="images/7.jpg"></a>
+            <a href="#"> <img src="images/8.jpg"></a>
+            <a href="#"> <img src="images/9.jpg"></a>
+            <div class="button">
+                <span id="prev">></span>
+                <span id="next"><</span>
+                <ul class="num">
+                    <li style="background:blue;">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+   <script>
+       var num=document.getElementsByClassName("num")[0];
+       var numList=num.getElementsByTagName('li');
+       var prev=document.getElementById("prev");
+       var next=document.getElementById('next');
+       var wrap=document.getElementsByClassName("wrap")[0];
+       var imgs=wrap.getElementsByTagName("a");
+       animate(num,numList,prev,next,wrap,imgs);
+   </script>
+</html>
