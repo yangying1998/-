@@ -1,0 +1,57 @@
+.top{
+    margin-left:30px;
+    margin-top:20px;
+    font-size:14px;
+}
+p{
+    margin-bottom:20px;
+}
+.tubiao{
+    width:545px;
+    height:30px;
+    border:1px solid gainsboro;
+}
+/* .tubiao span{
+    margin:auto 10px;
+} */
+.tubiao span img{
+    margin-bottom:0px;
+    height:15px;
+    width:15px;
+    margin:10px;
+}
+.huati{
+    margin-top:20px;
+}
+.huati span{
+    margin-right:20px;
+}
+.huati span img{
+    width:15px;
+    height:15px;
+}
+button{
+    float:right;
+    margin-right:120px;
+}
+.dongtai{
+    margin-top:30px;
+    margin-left:30px;
+}
+.dongtai ul{
+    line-height:30px;
+}
+.dongtai ul li{
+float:left;
+/* margin:10px; */
+font-size:14px;
+width:100px;
+height:30px;
+padding-left:40px;
+padding-top:5px;
+border-bottom:1px solid gainsboro;
+}
+.dongtai ul li img{
+    width:15px;
+    height:15px;
+}

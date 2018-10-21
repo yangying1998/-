@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="left">
+  <ul>
+    <li *ngFor='let sheqv of sheqvs;' >
+      <a [routerLink]="['/sheqv',sheqv.sheqvid]">
+      <div class="top">
+      <img src="{{sheqv.images}}">
+        <span>
+        <p style="color:black;"> <img src="assets/images/31.png">{{sheqv.Name}}</p>
+        <p style="font-size:12px;color:gray; height: 50px; overflow:hidden;">{{sheqv.jianjie}}</p>
+      </span>
+      </div>
+      <div class="bottom">{{sheqv.person}}
+        <span> 评论：{{sheqv.pinglun}}</span>
+        <span>阅读：{{sheqv.yuedu}}</span>
+      </div>
+    </a>
+    </li>
+  </ul>
+</div>
+<div class="right">
+  <p style="font-size:16px;color:slategray;">热门话题</p>
+  <p>#2015级程序设计基础#<span>6万</span></p>
+  <p>#cms与模板制作#<span>5万</span></p>
+  <p>#数据结构#<span>4万</span></p>
+  <p>#数据库原理#<span>4万</span></p>
+  <p>#web开发（二）#<span>4万</span></p>
+  <p>#数据库系统概论#<span>3万</span></p>
+  <p>#WEB开发（一）#<span>3万</span></p>
+</div>
+</div>
+

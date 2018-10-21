@@ -1,0 +1,38 @@
+nav{
+    height:50px;
+    background-color:whitesmoke;
+}
+.nav{
+    float:left;
+    margin-left:150px;
+}
+.nav2{
+   position:relative;
+   bottom:20px;
+   height:25px;
+}
+#nav1{
+    width:1000px;
+    margin-top:0px;
+    margin-left:500px;
+    line-height:50px;
+}
+#nav1 li{
+    float:left;
+    margin:0 10px;
+    cursor:pointer;
+}
+#nav1 li a{
+    color:black;
+    /* font-weight:normal; */
+    font-size:14px;
+}
+.tubiao{
+    margin-left:20px;
+}
+ .none ul {
+    display:none;
+}
+/* .block ul{
+    display:block;
+} */ 

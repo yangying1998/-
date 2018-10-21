@@ -1,0 +1,29 @@
+.list li{
+    float:left;
+    width:100px;
+    font-size:16px;
+}
+/* .active{
+    color:red;
+    font-size:50px;
+} */
+h3{
+  position:relative;
+    left:150px;
+    font-weight:normal;
+    font-size:20px;
+    padding-bottom:30px;
+}
+.list{
+    position:relative;
+    left:150px;
+}
+.container1{
+   padding-top:20px;
+    width:1130px;
+    /* background:gainsboro; */
+}
+.list li img{
+    width:20px;
+    height:20px;
+}

@@ -1,0 +1,39 @@
+.container{
+    width:1100px;
+    margin:0 auto;
+    /* margin-left:100px; */
+    border:1px solid white;
+    margin-left:120px;
+}
+.container li{
+    width:230px;
+    float:left;
+    margin-top:20px;
+    margin-left:20px;
+    border:1px solid gainsboro;
+}
+.container li a{
+    color:black;
+}
+span{
+    margin:5px;
+    color:gray;
+    font-size:12px;
+    margin-bottom:15px;
+    
+}
+h3{
+    font-weight:normal;
+    font-size:14px;
+    margin-bottom:30px;
+    margin-left:15px;
+}
+.but{
+    background:orangered;
+    color:white;
+    float:right;
+    margin-right:15px;
+    width:50px;
+    height:30px;
+ 
+}

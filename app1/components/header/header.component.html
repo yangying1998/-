@@ -1,0 +1,37 @@
+<nav>
+  <div class="nav"><img src="assets/images/logo.png"></div>
+<ul  id="nav1">
+  <li><a [routerLink]="['/home']">首页</a></li>
+  <li><a [routerLink]="['/tongbuke']">同步课</a></li>
+  <li><a [routerLink]="['/course']">课程</a></li>
+  <li><a [routerLink]="['/sheqv']" [queryParams]="{id:800}"> 社区</a></li>
+</ul>
+<input class="nav2" style="margin-left:20px; color:gray;" type="text" value="搜索课程，问答">
+<button style="height:30px;" class="nav2">搜索</button>
+
+  <span class="none">
+   <img class="tubiao" src="assets/images/1.png" (onmouseover)="block()">
+      <!-- <ul>
+        <li>@我的</li>
+        <li>收到的赞</li>
+        <li>评论</li>
+      </ul> -->
+  </span>
+  <span class="none">
+    <img  class="tubiao" src="assets/images/2.png" (onmouseover)="block()">
+      <!-- <ul>
+          <li>个人主页</li>
+          <li>设置</li>
+          <li>退出</li>
+        </ul> -->
+  </span>
+</nav>
+<!-- <script type="text/javascript">
+  var spans=document.getElementsByTagName("span");
+  function block(){
+    for(var i=0;i<spans.length;i++){
+      spans[i].className="block";
+    }
+
+  }
+</script> -->

@@ -1,0 +1,48 @@
+.jiaru{
+    font-size:14px;
+    margin-left:30px;
+    margin-top:15px;
+    margin-bottom:15px;
+    color:orange;
+    /* text-decoration:underline;
+    padding-bottom:15px;
+    color:orange; */
+}
+.fenge{
+    color:whitesmoke;
+    width:710px;
+    margin-left:15px;
+}
+.container{
+    margin-top:20px;
+    margin-left:15px;
+}
+.container ul li{
+    margin-top:10px;
+    margin-bottom:10px;
+    /* border:1px solid black; */
+    height:130px;
+    /* margin-bottom:1px solid black; */
+}
+.jianjie1{
+    position:relative;
+    left:270px;
+    bottom:130px;
+    color:black;
+}
+.jianjie2{
+    position:relative;
+    left:270px;
+    bottom:50px;
+    color:gray;
+    font-size:12px;
+}
+.fenge2{
+    position:relative;
+    bottom:170px;
+}
+.score{
+    position:relative;
+    left:550px;
+    bottom:170px;
+}

@@ -1,0 +1,32 @@
+<!-- <p>
+  homedetail2 works!
+</p> -->
+<div class="jiaru">我加入的</div>
+<div class="fenge"><hr/></div>
+<div class="container">
+    <ul>
+      <li *ngFor='let jiaru of jiarus;'>
+        <a [routerLink]="['/tongbuke',jiaru.id]">
+        <img src="{{jiaru.images}}">
+        <!-- <h3>{{course.courseName}}</h3>
+        <div>
+          <span><img src="assets/images/5.png"></span>
+          <span>{{course?.task}}</span>
+          <span><img src="assets/images/6.png"></span>
+          <span>{{course?.person}}</span>
+          <button style="float:right;margin-right:15px;">申请</button>
+        </div> -->
+        <div>
+         <div class="jianjie1"> {{jiaru.jiaruName}}</div>
+          <div>
+            <span class="jianjie2"><img src="assets/images/5.png">{{jiaru.task}}</span>
+            <span class="jianjie2"><img src="assets/images/6.png">{{jiaru.person}}</span>
+          </div>
+          <div class="score"><img src="assets/images/12.png"></div>
+        </div>
+      </a>
+      <div class="fenge2"><hr/></div>
+      </li>
+    </ul>
+  </div>
+  
