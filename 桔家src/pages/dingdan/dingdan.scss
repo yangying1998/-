@@ -1,0 +1,21 @@
+page-dingdan {
+    ion-content{
+        ion-grid{
+            ion-row{
+                 border-bottom:1px solid gainsboro;
+                ion-col{
+                    p{
+                         margin-top:0;
+                        margin-bottom:7px;
+                        color:gray;
+                        span{
+                            float:right;
+                            color:gray;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+}

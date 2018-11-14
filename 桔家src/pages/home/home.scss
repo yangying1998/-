@@ -1,0 +1,76 @@
+page-home {
+    // .daohang{
+    //     ion-row{
+    //         ion-col:hover{
+    //             border-bottom:orange;
+    //         }
+    //     }
+    // }
+    ul{
+        padding-left: 0!important;
+        margin: 0;
+        height: 44px;
+        line-height: 44px;
+        .first{
+            border-bottom:3px solid #ffdb2c;
+        }
+        li{
+            height: 44px;
+            text-align: center;
+            float: left;
+            width: 25%;
+            list-style-type:none;
+        }
+        // li:hover{
+        //     border-bottom:2px solid orange;
+        // }
+    }
+.sli{
+    height:auto;
+    // border:1px solid red;
+    img{
+        width:100%;
+    }
+}
+.subtitle{
+   
+    margin:-6px;
+    height:50px;
+    letter-spacing:5px;
+    line-height:10px;
+}
+.goods{
+    padding:0;
+    img{
+        width:100%;
+    }
+    ion-col{
+        position:relative;
+        p{
+            position:absolute;
+            bottom:0;
+            width:95%;
+           
+            color:#fff;
+            height:30px;
+            text-align:center;
+           background-color:rgba(0,0,0,0.5);
+        }
+        span{
+            display: block;
+            width: 26px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+            border-radius: 50%;
+            color: red;
+            position: absolute;
+            background: #fff;
+            right: 15px;
+            bottom: 40px;
+        }
+    }
+}
+
+
+}

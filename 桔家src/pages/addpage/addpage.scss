@@ -1,0 +1,31 @@
+page-addpage {
+    ion-content{
+        background-color:#ffdb2c!important;
+        ion-grid{
+            margin-top:40%;
+        ion-row{
+            ion-col{
+                text-align:center;
+                ion-icon{
+                   margin-bottom:15px;
+                    font-size:50px;
+                    background:white;
+                    width:100px;
+                    height:100px;
+                    line-height:100px;
+                    
+                    border-radius:100%;
+                }
+                h6{
+                    font-size:12px;
+                }
+            }
+        }
+    }
+        
+    }
+    ion-footer{
+        font-size:32px;
+    }
+
+}

@@ -1,0 +1,39 @@
+<ion-header>
+  <!-- <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar> -->
+ 
+</ion-header>
+
+<ion-content >
+  <input type="text"  (click)="sousuo()" value="双十二特惠好物超低价">
+  <img src="assets/imgs/11_02.png">
+  <!-- <ul>
+      <li *ngFor="let item of arr;let idx=index;" (click)="isClick(idx)" [class.first]="isActive==idx">{{this.item}}</li>
+  </ul> -->
+  <ul class="daohang" >
+      <li [class.first]="isActive==0"  (click)="isClick(0)">客厅</li>
+      <li [class.first]="isActive ==1" (click)="isClick(1)">卧室</li>
+      <li [class.first]="isActive==2 "(click)="isClick(2)" >餐厅</li>
+      <li [class.first]="isActive ==3"(click)="isClick(3)" >书房</li>
+      <li [class.first]="isActive ==4"(click)="isClick(4)" >门厅</li>
+  </ul>
+  <div class="shafa" text-center><p>-----&nbsp;&nbsp;沙发&nbsp;&nbsp;-----</p></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6><img src="assets/imgs/12_05.png"></ion-col>
+      <ion-col col-6><img src="assets/imgs/13_07.png"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6><img src="assets/imgs/14_12.png"></ion-col>
+      <ion-col col-6><img src="assets/imgs/15_13.png"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6><img src="assets/imgs/12_05.png"></ion-col>
+      <ion-col col-6><img src="assets/imgs/13_07.png"></ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

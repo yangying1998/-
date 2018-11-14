@@ -1,0 +1,55 @@
+page-zhuce {
+    ion-content{
+        background:url(../assets/imgs/19.png);
+        .head{
+            margin-top:10%;
+            color:white;
+            font-size:24px;
+            margin-bottom:20%;
+        }
+        // ion-icon{
+        //     // width:5%;
+        //     margin-left:8%;
+        //     font-size:16px;
+        //     // height:10%;
+        //     border-bottom:1px solid gainsboro;
+        //     color:gainsboro;
+        //     position:relative;
+        //     top:5%;
+        // }
+        ion-grid{
+          
+            ion-row{
+                width:80%;
+                margin-left:10%;
+                padding:5%;
+                border-bottom:1px solid gainsboro;
+                ion-col{
+                    ion-icon{
+                        color:gainsboro;
+                        font-size:26px;
+                    }
+                    input{
+                        background:transparent;
+                        //  border-right:none;
+                        //  border-left:none;
+                        //  border-top:none;
+                        border:none;
+                       color:gainsboro;
+                       font-size:16px;
+            
+                       }
+                }
+            }
+        }
+          
+           button{
+            width:80%;
+           }
+           p{
+              text-align:center;
+               color:white;
+           }
+        
+    }
+}

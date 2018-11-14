@@ -1,0 +1,172 @@
+<ion-header>
+  <ion-navbar color="mycolor">
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title text-center>桔家</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+  <ul>
+      <li *ngFor="let item of arr;let idx=index;" (click)="isClick(idx)" [class.first]="isActive==idx">{{this.item}}</li>
+  </ul>
+  <!-- <ul class="daohang" >
+    <li [class.first]="isActive==0"  (click)="isClick(0)">推荐</li>
+    <li [class.first]="isActive ==1" (click)="isClick(1)">家居</li>
+    <li [class.first]="isActive==2 "(click)="isClick(2)" >餐厨</li>
+    <li [class.first]="isActive ==3"(click)="isClick(3)" >床上用品</li>
+  </ul> -->
+   <!-- <ion-segment [(ngModel)]="lis">
+    <ion-segment-button value="tuijian">推荐</ion-segment-button>
+    <ion-segment-button value="jiajv">家居</ion-segment-button>
+    <ion-segment-button value="canchu">餐厨</ion-segment-button>
+    <ion-segment-button value="bed">床上用品</ion-segment-button>
+  </ion-segment>  -->
+   
+ <div [ngSwitch]="isActive">
+   <div *ngSwitchCase="0">
+  <!-- 图片轮播 -->
+      <ion-slides class="sli" autoplay="1000" pager="true" paginationType loop="true">
+        <ion-slide>
+          <!-- <h1>Slide 1</h1> -->
+          <img src="assets/imgs/1.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/1.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/1.png">
+        </ion-slide>
+      </ion-slides> 
+      <div class="subtitle" text-center>
+        <p>热门推荐</p>
+        <p>RECOMMENDATION</p>
+      </div>
+
+
+      <ion-grid class="goods">
+      <ion-row>
+        <ion-col col-6>
+          <img src="assets/imgs/2.png" >
+          <p>-北欧原木色置物架-</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </ion-col>
+        <ion-col col-6>
+          <img src="assets/imgs/3.png" >
+          <p>-简约黑檀木茶几-</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </ion-col>
+        <ion-col col-6>
+          <img src="assets/imgs/4.png" >
+          <p>-北欧白橡木书架-</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </ion-col>
+        <ion-col col-6>
+          <img src="assets/imgs/5.png" >
+          <p>-北欧风餐边柜-</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </ion-col>
+        <ion-col col-6>
+          <img src="assets/imgs/5.png" >
+          <p>-北欧风餐边柜-</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </ion-col>
+        <ion-col col-6>
+          <img src="assets/imgs/5.png" >
+          <p>-北欧风餐边柜-</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </ion-col>
+      </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngSwitchCase="1 ">
+        <ion-slides class="sli" autoplay="1000" pager="true" paginationType loop="true">
+            <ion-slide>
+              <!-- <h1>Slide 1</h1> -->
+              <img src="assets/imgs/7.png">
+            </ion-slide>
+            <ion-slide>
+              <img src="assets/imgs/7.png">
+            </ion-slide>
+            <ion-slide>
+              <img src="assets/imgs/7.png">
+            </ion-slide>
+          </ion-slides> 
+          <ion-grid>
+              <ion-row>
+              <ion-col col-4><img src="assets/imgs/8_05.png"></ion-col>
+              <ion-col col-4><img src="assets/imgs/9_07.png"></ion-col>
+              <ion-col col-4><img src="assets/imgs/10.png"></ion-col>
+            </ion-row>
+            </ion-grid>
+            <div class="subtitle" text-center>
+                <p>桔子家居</p>
+                <p>Orange Household</p>
+            </div>
+            <ion-grid class="goods">
+                <ion-row>
+                  <ion-col col-6>
+                    <img src="assets/imgs/2.png" >
+                    <p>-北欧原木色置物架-</p>
+                    <span><ion-icon name="md-star-half"></ion-icon></span>
+                  </ion-col>
+                  <ion-col col-6>
+                    <img src="assets/imgs/3.png" >
+                    <p>-简约黑檀木茶几-</p>
+                    <span><ion-icon name="md-star-half"></ion-icon></span>
+                  </ion-col>
+                  <ion-col col-6>
+                    <img src="assets/imgs/4.png" >
+                    <p>-北欧白橡木书架-</p>
+                    <span><ion-icon name="md-star-half"></ion-icon></span>
+                  </ion-col>
+                  <ion-col col-6>
+                    <img src="assets/imgs/5.png" >
+                    <p>-北欧风餐边柜-</p>
+                    <span><ion-icon name="md-star-half"></ion-icon></span>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+    </div> 
+      <div *ngSwitchCase=" 2 ">这是餐厨页</div>
+      <div *ngSwitchCase=" 3 ">这是床上用品页</div>
+  </div> 
+  
+ 
+
+
+
+
+
+  <!-- <ion-menu [content]="mycontent" type="overlay">
+    
+      <ion-list>
+        <p>some menu content, could be list items</p>
+      </ion-list>
+  
+  </ion-menu> -->
+  
+  <!-- <ion-nav #mycontent [root]="rootPage"></ion-nav> -->
+  <!-- <button menuToggle ion-button>开关菜单</button> --> 
+
+
+   <!-- <ion-list>
+    <ion-item *ngFor="let i of items">{{i}}</ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles"
+    loadingText="Loading more data..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll> -->
+
+<!-- 下拉刷新 -->
+<ion-refresher (ionRefresh)="doRefresh($event)">
+  <ion-refresher-content></ion-refresher-content>
+</ion-refresher>
+
+
+</ion-content>
+
+
+
